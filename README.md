@@ -152,8 +152,4 @@ The feature-based classifier remains the strongest single method. These results 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
 
-Distributed under the MIT License. See `LICENSE` for details.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
