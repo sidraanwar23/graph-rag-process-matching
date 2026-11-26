@@ -36,12 +36,7 @@
     <li><a href="#data">Data</a></li>
     <li><a href="#experiment-1-and-2-does-graph-context-help">Experiments 1 and 2: does graph context help?</a></li>
     <li><a href="#experiment-3-why-graph-context-hurts">Experiment 3: why graph context hurts</a></li>
-    <li><a href="#getting-started">Getting started</a></li>
-    <li><a href="#repository-structure">Repository structure</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#citation">Citation</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -153,60 +148,8 @@ The feature-based classifier is still the strongest single method. This is one s
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Getting started
+## License
 
-All three notebooks run on Google Colab with a free T4 GPU. Nothing needs to be installed locally.
-
-1. Open `01_data_and_baselines.ipynb` in Colab (badge above) and choose **Runtime → Change runtime type → T4 GPU**.
-2. Run all cells. It downloads the dataset, builds the graphs, runs the baselines and saves `outputs.zip`.
-3. Open `02_graph_context.ipynb`, upload `outputs.zip`, and run all cells. It saves `outputs_graph_context.zip`.
-4. Open `03_explaining_graph_context.ipynb`, upload both zip files, and run all cells.
-
-Notebooks 01 and 02 take about 30 to 45 minutes each and notebook 03 about an hour, mostly LLM inference. Seeds are fixed and LLM scoring is deterministic, so reruns reproduce the numbers above.
-
-## Repository structure
-
-```text
-graph-rag-process-matching/
-├── 01_data_and_baselines.ipynb        data, process graphs, gold alignments, baselines
-├── 02_graph_context.ipynb             graph-context prompts, checklist, hybrid, evaluation
-├── 03_explaining_graph_context.ipynb  occlusion attribution, faithfulness test, repairs
-├── figures/
-│   └── neighbour_importance.png
-├── LICENSE
-└── README.md
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Roadmap
-
-- [x] Rebuild my thesis approach on a public benchmark
-- [x] LLM baseline with labels only
-- [x] Graph context and a structured checklist prompt
-- [x] Find which context elements mislead the model, and test that the explanations are faithful
-- [x] Repairs: counterpart-only context and uncertainty-gated context
-- [ ] Calibrate the LLM's confidence so selective context has pairs to act on
-- [ ] Compare open models of different sizes
-- [ ] Repeat on the Birth Registration and Asset Management datasets
-- [ ] Compare with graph neural network matchers explained by graph attribution methods
-
-## Citation
-
-If you use this code or these results, please cite:
-
-```bibtex
-@misc{anwar2026graphcontext,
-  author = {Sidra Anwar},
-  title  = {When Graph Context Hurts: Explaining and Repairing LLM Reasoning for Business Process Matching},
-  year   = {2026},
-  url    = {https://github.com/sidraanwar23/graph-rag-process-matching}
-}
-```
-
-
-## Contact
-
-**Sidra Anwar** · sidraanwar050@gmail.com · [github.com/sidraanwar23](https://github.com/sidraanwar23)
+Distributed under the MIT License. See `LICENSE` for details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
